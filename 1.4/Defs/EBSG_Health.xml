@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef>
+        <defName>EBSG_MissingKidney</defName>
+        <label>missing kidney</label>
+        <description>Carriers of this gene are missing one of their kidneys from birth. The only way to rectify this issue is by giving them a kidney from another source.</description>
+        <iconPath>EBSG/Gene_MajorHemophilia</iconPath>
+        <displayCategory>Healing</displayCategory>
+        <modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+                <hediffToWholeBody>EBSG_MissingKidney</hediffToWholeBody>
+			</li>
+		</modExtensions>
+    </GeneDef>
+
+    <HediffDef>
+        <defName>EBSG_MissingKidney</defName>
+        <label>removing kidney</label>
+        <description>A body part will be removed once the game starts. To avoid weird errors, this needs to occur after the pawn is spawned.</description>
+        <defaultLabelColor>(0.7, 0.7, 0.7)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
+                <bodyPartsToRemove>
+                    <li>Kidney</li>
+                </bodyPartsToRemove>
+            </li>
+        </comps>
+    </HediffDef>
+
+</Defs>
