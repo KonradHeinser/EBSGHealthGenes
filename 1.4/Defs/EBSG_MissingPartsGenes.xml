@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef>
+        <defName>EBSG_MissingKidney</defName>
+        <label>missing kidney</label>
+        <description>Carriers of this gene are missing one of their kidneys from birth. The only way to rectify this issue is by giving them a kidney from another source.</description>
+        <iconPath>EBSG/Gene_MajorHemophilia</iconPath>
+        <displayCategory>Healing</displayCategory>
+        <modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+                <hediffToWholeBody>EBSG_MissingKidney</hediffToWholeBody>
+			</li>
+		</modExtensions>
+    </GeneDef>
+</Defs>
