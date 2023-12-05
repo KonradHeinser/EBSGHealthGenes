@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <HediffDef>
-        <defName>EBSG_MissingKidney</defName>
-        <label>removing kidney</label>
-        <description>A body part will be removed once the game starts. To avoid weird errors, this needs to occur after the pawn is spawned.</description>
+    <HediffDef Name="EBSG_PartRemover" Abstract="True">
+        <description>A body part will be damaged/removed once the game starts. To avoid weird errors, this needs to occur after the pawn is spawned.</description>
         <defaultLabelColor>(0.7, 0.7, 0.7)</defaultLabelColor>
 		<hediffClass>HediffWithComps</hediffClass>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<isBad>false</isBad>
+    </HediffDef>
+
+    <HediffDef ParentName="EBSG_PartRemover">
+        <defName>EBSG_MissingKidney</defName>
+        <label>removing kidney</label>
         <comps>
             <li Class="EBSGFramework.HediffCompProperties_DamageBodyParts">
                 <bodyPartsToRemove>
@@ -17,5 +20,4 @@
             </li>
         </comps>
     </HediffDef>
-
 </Defs>

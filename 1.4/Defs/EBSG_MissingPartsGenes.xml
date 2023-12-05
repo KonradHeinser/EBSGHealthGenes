@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <GeneDef>
+    <GeneCategoryDef>
+        <defName>EBSG_BodyParts</defName>
+        <label>EBSG - Body Parts</label>
+        <displayPriorityInXenotype>499</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+    <GeneDef Abstract="True" Name="EBSG_MissingPartBase">
+        <description>Carriers of this gene have some genetic damage from the moment they were born. The only way to rectify this issue is by giving them new parts from another source, which will result in this becoming free metabolic efficiency.\n\nThis is intended to allow players to create bonus early game challenges for themselves with some metabolic effiency as a reward if they manage to survive long enough to overcome the challenge. If you believe this is unbalanced for whatever reason, please feel free to ignore these genes and carry on to other interesting genes.\n\nIf you were hoping these would be more permanent, I'm afraid Rimworld really didn't like me playing with that idea. At this point, it's still something I'm playing with but don't expect to succeed on.</description>
+        <displayCategory>EBSG_BodyParts</displayCategory>
+    </GeneDef>
+
+    <GeneDef ParentName="EBSG_MissingPartBase">
         <defName>EBSG_MissingKidney</defName>
         <label>missing kidney</label>
-        <description>Carriers of this gene are missing one of their kidneys from birth. The only way to rectify this issue is by giving them a kidney from another source.</description>
-        <iconPath>EBSG/Gene_MajorHemophilia</iconPath>
-        <displayCategory>Healing</displayCategory>
+        <iconPath>EBSG/Gene_MissingKidney</iconPath>
+        <biostatMet>2</biostatMet>
         <modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
                 <hediffToWholeBody>EBSG_MissingKidney</hediffToWholeBody>
