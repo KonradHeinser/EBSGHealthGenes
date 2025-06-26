@@ -8,7 +8,7 @@
 
     <GeneDef Abstract="True" Name="EBSG_MissingPartBase">
         <geneClass>EBSGFramework.HediffAdder</geneClass>
-        <description>Carriers of this gene have some genetic damage from the moment they were born. The only way to rectify this issue is by giving them new parts from another source, which will result in this becoming free metabolic efficiency.\n\nThis is intended to allow players to create bonus early game challenges for themselves with some metabolic effiency as a reward if they manage to survive long enough to overcome the challenge. If you believe this is unbalanced for whatever reason, please feel free to ignore these genes and carry on to other interesting genes.\n\nIf you were hoping these would be more permanent, I'm afraid Rimworld really didn't like me playing with that idea. At this point, it's still someissue I'm playing with but don't expect to succeed on.</description>
+        <description>Carriers of this gene have some genetic damage from the moment they were born. The only way to rectify this issue is by giving them new parts from another source, which will result in this becoming free metabolic efficiency.\n\nThis is intended to allow players to create bonus early game challenges for themselves with some metabolic effiency as a reward if they manage to survive long enough to overcome the challenge. If you believe this is unbalanced for whatever reason, please feel free to ignore these genes and carry on to other interesting genes.</description>
         <displayCategory>EBSG_BodyParts</displayCategory>
     </GeneDef>
 
@@ -142,7 +142,6 @@
         <exclusionTags><li>EBSG_Arm</li></exclusionTags>
         <customEffectDescriptions>
             <li>One arm will be removed on spawn.</li>
-            <li>Causes bleeding on spawn, but only needs tended to once (it's a weird Rimworld issue).</li>
         </customEffectDescriptions>
         <modExtensions>
 			<li Class="EBSGFramework.EBSGExtension">
@@ -161,7 +160,6 @@
         <customEffectDescriptions>
             <li>One arm will be removed on spawn.</li>
             <li>One arm loses 50% health on spawn.</li>
-            <li>Causes bleeding on spawn, but only needs tended to once (it's a weird Rimworld issue).</li>
         </customEffectDescriptions>
         <modExtensions>
 			<li Class="EBSGFramework.EBSGExtension">
@@ -196,7 +194,6 @@
         <exclusionTags><li>EBSG_Leg</li></exclusionTags>
         <customEffectDescriptions>
             <li>One leg will be removed on spawn.</li>
-            <li>Causes bleeding on spawn, but only needs tended to once (it's a weird Rimworld issue).</li>
         </customEffectDescriptions>
         <modExtensions>
 			<li Class="EBSGFramework.EBSGExtension">
@@ -215,7 +212,6 @@
         <customEffectDescriptions>
             <li>One leg will be removed on spawn.</li>
             <li>One leg loses 50% health on spawn.</li>
-            <li>Causes bleeding on spawn, but only needs tended to once (it's a weird Rimworld issue).</li>
         </customEffectDescriptions>
         <modExtensions>
 			<li Class="EBSGFramework.EBSGExtension">
@@ -233,7 +229,6 @@
         <exclusionTags><li>EBSG_Ear</li></exclusionTags>
         <customEffectDescriptions>
             <li>One ear will be removed on spawn.</li>
-            <li>Causes bleeding on spawn, but only needs tended to once (it's a weird Rimworld issue).</li>
         </customEffectDescriptions>
         <modExtensions>
 			<li Class="EBSGFramework.EBSGExtension">
@@ -251,7 +246,6 @@
         <exclusionTags><li>EBSG_Ear</li></exclusionTags>
         <customEffectDescriptions>
             <li>Two ears will be removed on spawn.</li>
-            <li>Causes bleeding on spawn, but only needs tended to once (it's a weird Rimworld issue).</li>
         </customEffectDescriptions>
         <modExtensions>
 			<li Class="EBSGFramework.EBSGExtension">
@@ -269,7 +263,6 @@
         <exclusionTags><li>EBSG_Eye</li></exclusionTags>
         <customEffectDescriptions>
             <li>One eye will be removed on spawn.</li>
-            <li>Causes bleeding on spawn, but only needs tended to once (it's a weird Rimworld issue).</li>
         </customEffectDescriptions>
         <modExtensions>
 			<li Class="EBSGFramework.EBSGExtension">
@@ -287,7 +280,6 @@
         <exclusionTags><li>EBSG_Eye</li></exclusionTags>
         <customEffectDescriptions>
             <li>Two eyes will be removed on spawn.</li>
-            <li>Causes bleeding on spawn, but only needs tended to once (it's a weird Rimworld issue).</li>
         </customEffectDescriptions>
         <modExtensions>
 			<li Class="EBSGFramework.EBSGExtension">
